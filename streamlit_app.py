@@ -1,9 +1,10 @@
 import streamlit as st
 import pymongo
 import pandas as pd
+import secret
 
 # Replace <connection_string> with your actual MongoDB Atlas connection string
-client = pymongo.MongoClient("mongodb+srv://kleine:pJdXUtF0X7xNZ7Un@cluster0.g1l9kvw.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient(secret.api_key)
 
 # Replace <database_name> and <collection_name> with your actual database and collection names
 db = client.db01
