@@ -1,7 +1,7 @@
 import streamlit as st
 import pymongo
 import pandas as pd
-import secret
+
 
 # Replace <connection_string> with your actual MongoDB Atlas connection string
 client = pymongo.MongoClient(st.secrets["api_key"])
