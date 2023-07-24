@@ -4,7 +4,7 @@ import pandas as pd
 import secret
 
 # Replace <connection_string> with your actual MongoDB Atlas connection string
-client = pymongo.MongoClient(secret.api_key)
+client = pymongo.MongoClient(st.secrets["api_key"])
 
 # Replace <database_name> and <collection_name> with your actual database and collection names
 db = client.db01
